@@ -1,0 +1,130 @@
+.todo {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+.todo button {
+  padding: 16px 23px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 6px;
+}
+.todo button:hover {
+  transform: scale(1.1);
+}
+
+.buttonBox {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.todoBar {
+  width: 100%;
+  min-height: 50px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+  border: 1px solid antiquewhite;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: antiquewhite;
+  font-weight: 500;
+  overflow: hidden;
+  padding: 10px 0px;
+}
+
+.icon2 > .del {
+  background-color: antiquewhite;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.del.done {
+  background-color: crimson;
+  color: antiquewhite;
+}
+.icon2 > .next {
+  background-color: antiquewhite;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  padding: 0;
+  color: black;
+  font-weight: 600;
+  border: none;
+}
+
+.icon1 > .checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.icon1 > .box {
+  background-color: crimson;
+  color: antiquewhite;
+}
+
+.icon1,
+.icon2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 15%;
+}
+.text {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0px 5px;
+  word-break: break-word;
+}
+
+.textbox {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  outline: none;
+  padding-left: 12px;
+  border: none;
+  width: 90%;
+  border-radius: 20px;
+  height: 50%;
+  font-size: 14px;
+  background-color: transparent;
+  font-weight: 600;
+  color: white;
+}
+input::placeholder {
+  color: antiquewhite;
+  opacity: 0.6;
+}
